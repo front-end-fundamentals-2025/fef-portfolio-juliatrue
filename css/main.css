@@ -1,0 +1,41 @@
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  color: hotpink;
+}
+
+input {
+  color: black;
+  padding: 5px 5px 5px 10px;
+  margin: 5px 2px 5px 0px;
+  border-style: solid;
+  border-color: rgb(177, 177, 177);
+  width: 158px;
+}
+
+form {
+  text-align: center;
+}
+
+textarea {
+  width: 350px;
+  border-style: solid;
+  border-color: rgb(177, 177, 177);
+}
+
+.longer {
+  width: 340px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.contact-info {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5px;
+}
