@@ -5,9 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
+      <p id="logo">Julia Truedsson</p>
       <nav>
         <ul>
           <a href="index.html"><li>Home</li></a>
@@ -15,27 +22,29 @@
         </ul>
       </nav>
     </header>
-    <p class="contact-info-two no-margin">Do You Have a Question?</p>
-    <p class="contact-info">Fill out this form and I'll be in touch!</p>
+    <main>
+      <p class="contact-info-two no-margin">Do You Have a Question?</p>
+      <p class="contact-info">Fill out this form and I'll be in touch!</p>
 
-    <form>
-      <p class="no-margin">
-        <input type="text" value="First Name" />
-        <input type="text" value="Last Name" />
-      </p>
-      <p class="no-margin">
-        <input class="longer" type="email" value="Email" />
-      </p>
-      <p class="no-margin">
-        <input class="longer" type="tel" value="Phone Number" />
-      </p>
-      <p class="no-margin">
-        <textarea class="even-longer" name="message" id="msg">
+      <form>
+        <p class="no-margin">
+          <input type="text" value="First Name" />
+          <input type="text" value="Last Name" />
+        </p>
+        <p class="no-margin">
+          <input class="longer" type="email" value="Email" />
+        </p>
+        <p class="no-margin">
+          <input class="longer" type="tel" value="Phone Number" />
+        </p>
+        <p class="no-margin">
+          <textarea class="even-longer" name="message" id="msg">
 Write a message here</textarea
-        >
-      </p>
-      <input type="submit" value="Submit" />
-    </form>
+          >
+        </p>
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
     <footer>Julia Truedsson 2025</footer>
   </body>
 </html>
