@@ -6,28 +6,35 @@ p {
   font-family: "Lora", serif;
 }
 
-/* text */
+input,
+textarea,
+.contact-info,
+.contact-info-two,
+h2,
+h3 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 body {
   top: 0;
   margin: 0;
   padding: 0;
 }
 
+/* text */
 h2 {
-  margin-bottom: 0px;
   color: rgb(147, 1, 50);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-bottom: 0px;
 }
 
 h3 {
+  color: rgb(180, 52, 94);
   margin-bottom: 8px;
   margin-top: 6px;
-  color: rgb(177, 19, 71);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 main {
-  margin: 10px;
+  margin: 20px;
 }
 
 .square {
@@ -55,20 +62,16 @@ a {
   color: white;
 }
 
-nav {
-  margin-bottom: 20px;
-}
-
 header {
-  background-color: rgb(238, 79, 132);
+  background-color: rgb(180, 52, 94);
   top: 0;
 }
 
 #logo {
+  color: white;
   font-size: 30pt;
   font-weight: 600;
   letter-spacing: 2px;
-  color: white;
   padding-left: 20px;
   padding-top: 20px;
   margin: 0;
@@ -76,7 +79,7 @@ header {
 
 /* bottom of page */
 footer {
-  background-color: rgb(238, 79, 132);
+  background-color: rgb(180, 52, 94);
   color: white;
   width: 100%;
   padding: 5px 5px 5px 20px;
@@ -85,54 +88,48 @@ footer {
 }
 
 /* contact form */
-input {
+form,
+.contact-info,
+.contact-info-two {
+  text-align: center;
+}
+
+form p {
+  margin: 0;
+}
+
+input,
+textarea {
   color: rgb(118, 118, 118);
-  padding: 5px 5px 5px 10px;
-  margin: 5px 2px 5px 0px;
   border-style: solid;
   border-color: rgb(177, 177, 177);
-  width: 158px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 5px 5px 5px 10px;
+  margin: 5px 2px 5px 0px;
   font-size: 11pt;
 }
 
-form {
-  text-align: center;
+input {
+  width: 158px;
 }
 
 textarea {
   width: 340px;
   height: 100px;
-  border-style: solid;
-  border-color: rgb(177, 177, 177);
-  padding-left: 10px;
-  padding-top: 5px;
-  padding-right: 5px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 11pt;
-  color: rgb(118, 118, 118);
-  margin-top: 5px;
 }
 
 .longer {
   width: 340px;
 }
 
-.no-margin {
-  margin: 0;
-}
-
 .contact-info {
   color: rgb(177, 19, 71);
-  text-align: center;
   margin-top: 5px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .contact-info-two {
   color: rgb(147, 1, 50);
-  text-align: center;
   font-weight: bold;
-  font-size: 24px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20pt;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
