@@ -19,28 +19,27 @@
         <ul>
           <a href="index.html"><li>Home</li></a>
           <a href="#"><li>Contact</li></a>
+          <a href="projects.html"><li>Projects</li></a>
         </ul>
       </nav>
     </header>
-    <main>
-      <p class="contact-info-two">Do You Have a Question?</p>
-      <p class="contact-info">Fill out this form and I'll be in touch!</p>
+    <main class="container-contact">
+      <p class="contact-info">Do You Have a Question?</p>
+      <p class="contact-info-two">Fill out this form and I'll be in touch!</p>
 
       <form>
         <p>
-          <input type="text" value="First Name" />
-          <input type="text" value="Last Name" />
+          <input type="text" placeholder="First Name" />
+          <input type="text" placeholder="Last Name" />
+          <input type="email" placeholder="Email" />
+          <input type="tel" placeholder="Phone Number" />
+          <textarea
+            name="message"
+            id="msg"
+            placeholder="Write a message here"
+          ></textarea>
+          <input id="click" type="submit" value="Submit" />
         </p>
-        <p>
-          <input class="longer" type="email" value="Email" />
-        </p>
-        <p>
-          <input class="longer" type="tel" value="Phone Number" />
-        </p>
-        <p>
-          <textarea name="message" id="msg">Write a message here</textarea>
-        </p>
-        <input type="submit" value="Submit" />
       </form>
     </main>
     <footer>Julia Truedsson 2025</footer>
