@@ -47,25 +47,27 @@ main {
   margin-bottom: 15px;
 }
 
+.container-about {
+  display: grid;
+  grid-template-areas: "side text .";
+  justify-content: center;
+}
+
 .text {
-  width: 40%;
+  grid-area: text;
+  justify-self: center;
+  width: 50vw;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .text {
-    width: 40%;
+    width: 40vw;
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
   .text {
-    width: 80%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .text {
-    width: 100%;
+    width: 70vw;
   }
 }
 
@@ -86,6 +88,14 @@ ul a {
 header {
   background-color: rgb(0, 75, 96);
   width: 100%;
+}
+
+.glow:hover {
+  text-shadow: rgb(255, 255, 255) 0.1rem 0 0.6rem;
+}
+
+.glow:active {
+  text-decoration-line: underline;
 }
 
 #logo {
@@ -205,10 +215,31 @@ section a {
   text-decoration: none;
   font-weight: 600;
   border-radius: 0.25rem;
+  animation-name: pop;
+  animation-duration: 500ms;
+  animation-timing-function: ease;
+}
+
+.ani:hover {
+  transform: scale(1.02);
+  background-color: rgba(5, 119, 150, 0.25);
 }
 
 .project-img {
   width: 100%;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.75);
+    opacity: 50%;
+  }
+  80% {
+    opacity: 100%;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @media screen and (max-width: 950px) {
