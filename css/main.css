@@ -91,11 +91,22 @@ header {
 }
 
 .glow:hover {
-  text-shadow: rgb(255, 255, 255) 0.1rem 0 0.6rem;
+  animation-name: glowing;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
 }
 
 .glow:active {
   text-decoration-line: underline;
+}
+
+@keyframes glowing {
+  from {
+    text-shadow: rgb(255, 255, 255) 0.2rem 0 0.6rem;
+  }
+  to {
+    text-shadow: none;
+  }
 }
 
 #logo {
@@ -110,7 +121,7 @@ header {
 
 @media screen and (max-width: 380px) {
   #logo {
-    font-size: 2rem;
+    font-size: 90%;
   }
 }
 
