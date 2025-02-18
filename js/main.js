@@ -1,9 +1,8 @@
 class ChangeText {
   constructor(project, image) {
     const caption = project.innerText;
-    image.style.opacity = this.op;
 
-    this.image.addEventListener("mouseover", function () {
+    image.addEventListener("mouseover", function () {
       project.innerText = "Click for Details";
     });
     image.addEventListener("mouseout", function () {
@@ -30,4 +29,14 @@ const photo = new ChangeText(
 const photoTwo = new ChangeText(
   document.getElementById("caption-photo-two"),
   document.getElementById("project-photo-two")
+);
+
+const photoThree = new ChangeText(
+  document.getElementById("caption-photo-three"),
+  document.getElementById("project-photo-three")
+);
+
+const photoFour = new ChangeText(
+  document.getElementById("caption-photo-four"),
+  document.getElementById("project-photo-four")
 );
